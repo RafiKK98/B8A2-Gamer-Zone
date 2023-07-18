@@ -19,6 +19,9 @@ body {
 .pink-text {
     color: #FF42A5;
 }
+.white-text {
+    color: #FFF;
+}
 .purple-gradient-text {
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
@@ -58,6 +61,20 @@ body {
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
+}
+.btn-white {
+    display: inline-flex;
+    padding: 1.25rem 2.5rem;
+    align-items: flex-start;
+    gap: 10px;
+    border: 0;
+    border-radius: 48px;
+    background: FFF;
+    color: #FF42A5;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 /* navbar styles */
@@ -169,7 +186,103 @@ body {
     font-weight: 700;
 }
 
+/* game-cards-section styles */
+.game-cards-section {
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+.game-cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+.game-card {
+    text-align: left;
+}
+.card-text {
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+}
+/* online-gamer-section styles */
+.online-gamer-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 3.5rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    margin-top: 4rem;
+    /* margin-bottom: 7.5rem; */
+    gap: 8rem;
+}
+.online-gamer-content {
+    padding-top: 15rem;
+    text-align: left;
+    padding-left: 5rem;
+}
+.online-gamer-img img:last-child {
+    position: relative;
+    bottom: 242px;
+    left: 310px;
+}
+/* Career section styles */
+.career-section {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    /* padding-top: 3.5rem; */
+    padding-left: 15rem;
+    /* padding-right: 15rem; */
+    gap: 2rem;
+}
+.career-section-content {
+    text-align: left;
+    padding-top: 3.5rem;
+}
+.career-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+#career-list-left-col {
+    width: 50%;
+    text-align: left;
+} 
+#career-list-right-col {
+    width: 35%;
+    text-align: right;
+}
 
+/* game icons section styles */
+.game-icons-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 7rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.game-icon {
+    width: 16%;
+    /* border: 1px solid black; */
+    border-radius: 50px;
+    background: #FFF;
+    text-align: center;
+}
+.game-icon-img, .game-icon-text {
+    vertical-align: middle;
+}
+.game-icon-text {
+    color: #0B0223;
+    padding-left: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
 /* footer section styles */
 .footer {
     background: #0B0223;
@@ -185,6 +298,10 @@ body {
     justify-content: center;
     gap: 3.75rem;
     margin-top: 2.5rem;
+}
+.footer-links a {
+    text-decoration: none;
+    color: #FFF;
 }
 .footer-social-icons {
     display: flex;
