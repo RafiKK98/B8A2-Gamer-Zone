@@ -205,6 +205,18 @@ body {
 }
 .game-card {
     text-align: left;
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
+}
+.game-card:hover {
+    cursor: pointer;
+    -webkit-filter: brightness(30%);
+    filter: brightness(30%);
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 .card-text {
     color: #534C64;
@@ -212,6 +224,7 @@ body {
     font-weight: 500;
     line-height: 30px; /* 150% */
 }
+
 /* online-gamer-section styles */
 .online-gamer-section {
     display: flex;
@@ -286,6 +299,12 @@ body {
     border-radius: 50px;
     background: #FFF;
     text-align: center;
+    transition: all 0.5s ease-out;
+}
+.game-icon:hover {
+    cursor: pointer;
+    border: 1.5px solid #FF42A5;
+    /* color: #FF42A5; */
 }
 .game-icon-img, .game-icon-text {
     vertical-align: middle;
@@ -296,6 +315,7 @@ body {
     font-size: 1rem;
     font-weight: 600;
 }
+
 /* footer section styles */
 .footer {
     background: #0B0223;
@@ -351,7 +371,7 @@ body {
         text-align: center;
     }
     .banner-img img {
-        width: 100vw;
+        width: 95vw;
         height: auto;
     }
     .gamer-intro-section {
@@ -361,12 +381,12 @@ body {
         padding-right: 0;
     }
     .gamer-intro-img img {
-        width: 100vw;
+        width: 95vw;
         height: auto;
     }
     .gamer-intro-content {
         text-align: center;
-        padding: 4rem 1rem;
+        padding: 4rem 4rem;
     }
     .game-cards-container {
         display: grid;
@@ -386,10 +406,11 @@ body {
         align-items: center;
         padding-right: 0px;
         padding-left: 0px;
+        padding-bottom: 5rem;
     }
     .online-gamer-content {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
         text-align: center;
     }
     .online-gamer-img img:first-child {
@@ -400,6 +421,37 @@ body {
         width: 25vw;
         top: 80%;
         left: 65%;
+    }
+    .career-section {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 5rem;
+    }
+    .career-section-content {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    .career-section-img img {
+        width: 90vw;
+        height: auto;
+    }
+    .game-icons-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+    .game-icon{
+        width: auto;
+    }
+    .footer-social-icons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin: 3.5rem 4rem;
+        padding-left: 56px;
+        padding-right: 56px;
     }
 }
 
@@ -428,7 +480,7 @@ body {
         text-align: center;
     }
     .banner-img img {
-        width: 100vw;
+        width: 95vw;
         height: auto;
     }
     .gamer-intro-section {
@@ -438,7 +490,7 @@ body {
         padding-right: 0;
     }
     .gamer-intro-img img {
-        width: 100vw;
+        width: 95vw;
         height: auto;
     }
     .gamer-intro-content {
@@ -477,5 +529,36 @@ body {
         width: 25vw;
         top: 80%;
         left: 65%;
+    }
+    .career-section {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 5rem;
+    }
+    .career-section-content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .career-section-img img {
+        width: 90vw;
+        height: auto;
+    }
+    .game-icons-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    .game-icon{
+        width: auto;
+    }
+    .footer-social-icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        margin: 3.5rem 4rem;
+        padding-left: 56px;
+        padding-right: 56px;
     }
 }
