@@ -221,6 +221,7 @@ body {
     padding-left: 15rem;
     padding-right: 15rem;
     margin-top: 4rem;
+    margin-bottom: 10rem;
     /* margin-bottom: 7.5rem; */
     gap: 8rem;
 }
@@ -229,10 +230,15 @@ body {
     text-align: left;
     padding-left: 5rem;
 }
-.online-gamer-img img:last-child {
+.online-gamer-img{
     position: relative;
-    bottom: 242px;
-    left: 310px;
+}
+.online-gamer-img img:last-child {
+    position: absolute;
+    /* bottom: 242px;
+    left: 310px; */
+    top: 65%;
+    left: 65%;
 }
 /* Career section styles */
 .career-section {
@@ -336,12 +342,64 @@ body {
         display: flex;
         flex-direction: column-reverse;
     }
-
+    .banner-content {
+        text-align: center;
+        padding: 4rem 1rem;
+    }
+    .banner-content > h2, 
+    .banner-content > h1 {
+        text-align: center;
+    }
+    .banner-img img {
+        width: 100vw;
+        height: auto;
+    }
+    .gamer-intro-section {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .gamer-intro-img img {
+        width: 100vw;
+        height: auto;
+    }
+    .gamer-intro-content {
+        text-align: center;
+        padding: 4rem 1rem;
+    }
     .game-cards-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: space-around;
         gap: 1.5rem;
+    }
+    .game-cards-section {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .game-card {
+        text-align: center;
+    }
+    .online-gamer-section {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .online-gamer-content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+    }
+    .online-gamer-img img:first-child {
+        width: 60vw;
+        height: auto;
+    }
+    .online-gamer-img img:last-child {
+        width: 25vw;
+        top: 80%;
+        left: 65%;
     }
 }
 
@@ -361,10 +419,63 @@ body {
         display: flex;
         flex-direction: column-reverse;
     }
+    .banner-content {
+        text-align: center;
+        padding: 4rem 1rem;
+    }
+    .banner-content > h2, 
+    .banner-content > h1 {
+        text-align: center;
+    }
+    .banner-img img {
+        width: 100vw;
+        height: auto;
+    }
+    .gamer-intro-section {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .gamer-intro-img img {
+        width: 100vw;
+        height: auto;
+    }
+    .gamer-intro-content {
+        text-align: center;
+        padding: 4rem 1rem;
+    }
     .game-cards-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: space-around;
         gap: 1.5rem;
+    }
+    .game-cards-section {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .game-card {
+        text-align: center;
+    }
+    .online-gamer-section {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .online-gamer-content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+    }
+    .online-gamer-img img:first-child {
+        width: 60vw;
+        height: auto;
+    }
+    .online-gamer-img img:last-child {
+        width: 25vw;
+        top: 80%;
+        left: 65%;
     }
 }
